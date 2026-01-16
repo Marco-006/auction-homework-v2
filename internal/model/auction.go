@@ -34,6 +34,7 @@ type Auction struct {
 	DurationMinutes uint64    `json:"durationMinutes" gorm:"not null"`
 	EndTime         time.Time `gorm:"not null"`
 
-	CreatedAt		time.Time  `gorm:"autoCreateTime"`
-	UpdateAt		time.Time  `gorm:"autoUpdateTime"`
+	CreatedAt   time.Time `gorm:"autoCreateTime"`
+	UpdateAt    time.Time `gorm:"autoUpdateTime"`
+	BlockNumber uint64    `gorm:"not null"` // 区块号
 }

@@ -14,7 +14,7 @@ type Bid struct {
 	BidUSD      string `gorm:"size:100"`
 
 	// TxHash      string    `gorm:"size:66;not null"`
-	// BlockNumber uint64    `gorm:"not null"`
+	BlockNumber uint64 `gorm:"not null"` // 区块号
 	// BidTime     time.Time `gorm:"not null"`
 
 	CreatedAt time.Time `gorm:"autoCreateTime"`

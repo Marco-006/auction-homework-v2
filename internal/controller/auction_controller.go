@@ -86,7 +86,6 @@ func (ctl *AuctionController) QueryAuctionBids(c *gin.Context) {
 	utils.Success(c, bids)
 }
 
-
 func (ctl *AuctionController) QueryNftsByWalletAdress(c *gin.Context) {
 	auctionId := c.Param("id")
 	var bids []model.Bid
